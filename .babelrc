@@ -1,0 +1,23 @@
+{
+    "presets": [
+        ["env", {
+                "targets": {
+                    "browsers": ["last 2 versions", "IE 9"],
+                },
+                "modules": false,
+                "loose": true,
+                "useBuiltIns": true
+            }
+        ],
+        "react",
+        "stage-0",
+        "flow"
+    ],
+    "plugins": [
+        "transform-object-rest-spread",
+        "transform-decorators-legacy",
+        ["module-resolver", {
+            "root": ["./src"],
+        }]
+    ]
+}

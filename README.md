@@ -25,3 +25,10 @@ _______
 ```declare module 'PACKAGE-NAME' { declare var exports: any; }```
 
 - maps inside `./src` are automatically recognized by eslint/flow, just use the name of the dir
+
+
+Startings:
+- dev: `npm start`
+- build production node server: `npm run build:server`
+- build production bundle: `npm run build:client`
+- start production server: `npm run start:dist`

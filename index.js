@@ -20,11 +20,4 @@ const render = (Component) => {
     );
 };
 
-if (module.hot) {
-    module.hot.accept('./src/containers/index', () => {
-        const newC = require('./src/containers/index.js').default; // eslint-disable-line
-        render(newC);
-    });
-}
-
 render(App);

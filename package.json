@@ -1,7 +1,7 @@
 {
-  "name": "bo-intogolf",
+  "name": "labela-test",
   "version": "1.0.0",
-  "description": "back-office intoglf",
+  "description": "labelatest",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,17 +10,19 @@
     "build:client": "webpack --env=prod --progress --profile --colors --config webpack/webpack.prod.config.js",
     "start:dist": "node ./dist/prod/prodServer.js"
   },
-  "author": "",
+  "author": "Angelo A",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.0.0",
     "react-css-modules": "^4.7.1",
     "react-dom": "^16.0.0",
-    "react-hot-loader": "^3.0.0-beta.7",
+    "react-hot-loader": "^4.0.0",
     "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "styled-components": "^3.2.1",
+    "webpack": "^3.6.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -41,12 +43,13 @@
     "eslint": "^4.8.0",
     "eslint-config-airbnb": "^16.0.0",
     "eslint-import-resolver-babel-module": "^3.0.0",
-    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-flowtype": "^2.46.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
     "express": "^4.16.2",
     "extract-text-webpack-plugin": "^3.0.1",
+    "flow-bin": "^0.67.1",
     "html-webpack-plugin": "^2.30.1",
     "lodash-webpack-plugin": "^0.11.4",
     "postcss-cssnext": "^3.0.2",

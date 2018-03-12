@@ -54,7 +54,7 @@ module.exports = {
             allChunks: true,
         }),
         new HtmlWebpack({
-            title: 'Intogolf',
+            title: 'Label A test case',
             filename: 'index.html',
             template: 'tools/index.jst',
         }),
@@ -85,8 +85,11 @@ module.exports = {
             },
         }),
         new webpack.DefinePlugin({
-            'IS_PRODUCTION': JSON.stringify(true),
-            'process.env.NODE_ENV': JSON.stringify('production')
+            IS_PRODUCTION: JSON.stringify(true),
+            IS_SERVER: JSON.stringify(false),
+            process_env: {
+                NODE_ENV: JSON.stringify('production'),
+            },
         }),
     ],
 }

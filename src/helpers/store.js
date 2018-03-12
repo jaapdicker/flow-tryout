@@ -28,16 +28,6 @@ const configureStore = (initialState: Object) => {
         compose(...enhancers),
     );
 
-    if (typeof window === 'function') {
-        const { module } = window;
-        if (!IS_PRODUCTION && (module).hot) {
-            (module).hot.accept('../reducers', () => {
-                const nextRootReducer = require('../reducers').default; // eslint-disable-line
-                store.replaceReducer(nextRootReducer);
-            });
-        }
-    }
-
     return store;
 };
 

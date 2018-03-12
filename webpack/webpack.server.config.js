@@ -43,10 +43,11 @@ module.exports = {
     },
     plugins: [
         new webpack.DefinePlugin({
-            'IS_PRODUCTION': JSON.stringify(true),
-            'IS_SERVER': JSON.stringify(true),
-            '__env': JSON.stringify(),
-            'process.env.NODE_ENV': JSON.stringify('production'),
+            IS_PRODUCTION: JSON.stringify(true),
+            IS_SERVER: JSON.stringify(true),
+            process_env: {
+                NODE_ENV: JSON.stringify('production'),
+            },
         }),
         new webpack.ProvidePlugin({
             React: 'react',

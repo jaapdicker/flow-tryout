@@ -1,9 +1,5 @@
  {
   "extends": "airbnb",
-  "ecmaFeatures": {
-    "jsx": true,
-    "experimentalObjectRestSpread": true
-  },
   "env": {
     "browser": true,
     "node": true
@@ -15,7 +11,21 @@
   },
   "globals": {
     "window": true,
-    "IS_PRODUCTION": true
+    "IS_PRODUCTION": true,
+    "$Exact",
+    "$Keys",
+    "$Values",
+    "$ReadOnly",
+    "$Diff",
+    "$Rest",
+    "$PropertyType",
+    "$ElementType",
+    "$ObjMap",
+    "$TupleMap",
+    "$Call",
+    "$Supertype",
+    "$Subtype",
+    '$Shape'
   },
   "parser": "babel-eslint",
   "rules": {
@@ -36,6 +46,7 @@
     "import/extensions": [1, {
       "js": "never"
     }],
+    "jsx-a11y/anchor-is-valid": 0,
     "jsx-a11y/anchor-has-content": 0,
     "react/sort-comp": [
       1,

@@ -1,8 +1,10 @@
 /* @flow */
 import { combineReducers } from 'redux';
 
-import example from 'reducers/example';
+import categories from 'reducers/categories';
+import category from 'reducers/category';
 
 export default combineReducers({
-    example,
+    overview: categories,
+    category,
 });

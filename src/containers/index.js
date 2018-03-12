@@ -1,26 +1,18 @@
 /* @flow */
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { hot } from 'react-hot-loader';
+
+import Overview from './Overview';
+import Category from './Category';
 
 const App = () => (
-    <div
-        style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            width: '100%',
-            height: '100%',
-            position: 'absolute',
-        }}
-    >
-        <img
-            alt="GOAT"
-            width="500"
-            src="http://junkee.com/wp-content/uploads/2017/02/drake.jpg"
-            style={{
-                border: '10px solid rgb(233, 66, 122)',
-            }}
-        />
-    </div>
+    <Router>
+        <div>
+            <Route exact path="/" component={Overview} />
+            <Route path="/category/:name" component={Category} />
+        </div>
+    </Router>
 );
 
-export default App;
+export default hot(module)(App);

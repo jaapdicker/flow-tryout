@@ -1,9 +1,25 @@
 [ignore]
 
 [include]
+node_modules
 
 [libs]
+./node_modules/fbjs/flow/lib/dev.js
+./flow
 
 [options]
+module.system=haste
+module.system.node.resolve_dirname=src
+module.system.node.resolve_dirname=src/reducers
+module.system.node.resolve_dirname=src/helpers
+module.system.node.resolve_dirname=src/actions
+module.system.node.resolve_dirname=src/containers
+module.system.node.resolve_dirname=src/types
+module.system.node.resolve_dirname=src/styled
+module.system.node.resolve_dirname=src/components
+
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+esproposal.decorators=ignore
 
 [lints]
